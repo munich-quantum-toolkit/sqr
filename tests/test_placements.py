@@ -110,9 +110,22 @@ def test_random_placement_is_deterministic() -> None:
     )
 
     assert first == second
-    assert len(first) == 3
-    assert len(set(first)) == 3
-    assert set(first) <= set(sn_nodes)
+
+
+def test_random_placement_returns_valid_coordinates() -> None:
+    """Random placement should return distinct available SN nodes."""
+    strategy = RandomPlacementStrategy()
+    sn_nodes = [(0, 0), (0, 1), (1, 0), (1, 1)]
+
+    placement = strategy.place_qubits(
+        sn_nodes=sn_nodes,
+        n_qubits=3,
+        seed=42,
+    )
+
+    assert len(placement) == 3
+    assert len(set(placement)) == 3
+    assert set(placement) <= set(sn_nodes)
 
 
 def test_interaction_placement_falls_back_to_random_placement() -> None:
