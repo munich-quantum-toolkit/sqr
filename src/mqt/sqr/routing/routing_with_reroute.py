@@ -351,7 +351,7 @@ class RerouteRoutingPlanner(DefaultRoutingPlanner, RoutingStrategy):
                             blocked_edges=defective_edges,
                         )
                         evac_plans[qid] = one[qid]
-                    except RuntimeError:  # ruff: ignore[try-except-in-loop]
+                    except RuntimeError:
                         ab = blocker_to_pair.get(qid)
                         if ab:
                             pkey = frozenset(ab)
