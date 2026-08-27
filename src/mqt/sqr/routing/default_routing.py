@@ -181,7 +181,7 @@ class DefaultRoutingPlanner(RoutingStrategy):
                                 )
                                 evac_plans[qid] = one[qid]
                                 blocked_now.add(one[qid][-1][0])
-                            except RuntimeError:  # ruff: ignore[try-except-in-loop]
+                            except RuntimeError:
                                 ab = blocker_to_pair.get(qid)
                                 if ab:
                                     pkey = frozenset(ab)
