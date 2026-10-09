@@ -28,22 +28,25 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: 3.15",
   "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
   "Topic :: Scientific/Engineering :: Quantum Computing",
   "Topic :: Software Development :: Compilers",
   "Typing :: Typed",
 ]
 dependencies = [
-  "kiwisolver>=1.5",
+  "kiwisolver>=1.5.1",
   "matplotlib>=3.7.1",
   "matplotlib>=3.8; python_version>='3.12'",
   "matplotlib>=3.10.5; python_version>='3.14'",
   "matplotlib>=3.10; python_version>='3.13'",
+  "matplotlib>=3.11.2; python_version>='3.15'",
   "networkx>=2.8.8",
   "numpy>=1.24",
   "numpy>=1.26; python_version>='3.12'",
   "numpy>=2.1; python_version>='3.13'",
   "numpy>=2.3.2; python_version>='3.14'",
+  "numpy>=2.5.2; python_version>='3.15'",
   "typing-extensions>=4.16",
 ]
 
