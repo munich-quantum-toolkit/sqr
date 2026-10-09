@@ -1502,8 +1502,7 @@ test = [
 
 [package.metadata]
 requires-dist = [
-    { name = "kiwisolver", specifier = ">=1.5" },
-    { name = "kiwisolver", marker = "python_full_version >= '3.15'", specifier = ">=1.5.1" },
+    { name = "kiwisolver", specifier = ">=1.5.1" },
     { name = "matplotlib", specifier = ">=3.7.1" },
     { name = "matplotlib", marker = "python_full_version >= '3.12'", specifier = ">=3.8" },
     { name = "matplotlib", marker = "python_full_version >= '3.13'", specifier = ">=3.10" },
