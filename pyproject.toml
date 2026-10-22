@@ -88,7 +88,7 @@ docs = [
 
 
 [tool.uv]
-required-version = ">=0.13.4"
+required-version = ">=0.8.17"
 
 [tool.uv.sources]
 mqt-sqr = { workspace = true }
